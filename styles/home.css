@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+header {
+    background-color: darkgreen;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header img {
+    width: 20%;
+    min-width: 220px;
+    margin-top: 30px;
+}
+
+section {
+    width: 45%;
+    min-width: 350px;
+    margin: -100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section h3 {
+    font-size: 26px;
+    margin: 10px 0;
+    color: white;
+}
+
+section .input,
+section .output,
+section .total {
+    background-color: #FFF;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
+}
+
+section .total {
+    background-color: green;
+    color: white;
+}
+
+section .input p,
+section .output p,
+section .total p {
+    font-size: 17px;
+}
+
+section .input h4,
+section .output h4,
+section .total h4 {
+    font-size: 30px;
+}
+
+table {
+    background-color: white;
+    width: 45%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+thead {
+    text-align: left;
+}
+
+thead tr th {
+    background-color: #d4d1d1;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+tbody tr td {
+    background-color: #ece8e8;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: bold;
+}
