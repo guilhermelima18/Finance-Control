@@ -13,7 +13,7 @@
         <img src="./assets/financecontrol.png" alt="Logo Finance Control">
     </header>
 
-    <section>
+    <section class="balance">
         <h3>Balanço</h3>
         <div class="input">
             <p>Entradas</p>
@@ -29,32 +29,35 @@
         </div>
     </section>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Descrição</th>
-                <th>Valor</th>
-                <th>Data</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Energia</td>
-                <td>R$ 215,00</td>
-                <td>20/01/2021</td>
-            </tr>
-            <tr>
-                <td>Criação de Websites</td>
-                <td>R$ 5.000,00</td>
-                <td>15/01/2021</td>
-            </tr>
-            <tr>
-                <td>Internet</td>
-                <td>R$ 140,00</td>
-                <td>26/01/2021</td>
-            </tr>
-        </tbody>
-    </table>
+    <section class="transactions">
+        <h3>Transações</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="description">Energia</td>
+                    <td class="expense">-R$ 215,00</td>
+                    <td class="data">20/01/2021</td>
+                </tr>
+                <tr>
+                    <td class="description">Criação de Websites</td>
+                    <td class="income">R$ 5.000,00</td>
+                    <td class="data">15/01/2021</td>
+                </tr>
+                <tr>
+                    <td class="description">Internet</td>
+                    <td class="expense">-R$ 140,00</td>
+                    <td class="data">26/01/2021</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
     <footer>
         <p>Finance Control $$$</p>
