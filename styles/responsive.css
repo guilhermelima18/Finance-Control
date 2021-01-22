@@ -1,0 +1,13 @@
+@media (max-width: 1000px) {
+    section.balance {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    section.transactions table {
+        display: block;
+        overflow-x: auto;
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <title>Controle de Finanças</title>
 </head>
 
@@ -14,29 +15,38 @@
     </header>
 
     <section class="balance">
-        <h3>Balanço</h3>
         <div class="input">
-            <p>Entradas</p>
-            <h4>R$ 500.000,00</h4>
+            <div class="input-top">
+                <p>Entradas</p>
+                <img src="./assets/income.svg" alt="Entradas">
+            </div>
+            <h4>R$ 5.000,00</h4>
         </div>
         <div class="output">
-            <p>Saídas</p>
+            <div class="output-top">
+                <p>Saídas</p>
+                <img src="./assets/expense.svg" alt="Saídas">
+            </div>
             <h4>R$ 2.000,00</h4>
         </div>
         <div class="total">
-            <p>Total</p>
+            <div class="total-top">
+                <p>Total</p>
+                <img src="./assets/total.svg" alt="Total">
+            </div>
             <h4>R$ 3.000,00</h4>
         </div>
     </section>
 
     <section class="transactions">
-        <h3>Transações</h3>
+        <a href="#">+ Nova Transação</a>
         <table>
             <thead>
                 <tr>
                     <th>Descrição</th>
                     <th>Valor</th>
                     <th>Data</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -44,16 +54,19 @@
                     <td class="description">Energia</td>
                     <td class="expense">-R$ 215,00</td>
                     <td class="data">20/01/2021</td>
+                    <td><img src="./assets/minus.svg" alt="Remover transação"></td>
                 </tr>
                 <tr>
                     <td class="description">Criação de Websites</td>
                     <td class="income">R$ 5.000,00</td>
                     <td class="data">15/01/2021</td>
+                    <td><img src="./assets/minus.svg" alt="Remover transação"></td>
                 </tr>
                 <tr>
                     <td class="description">Internet</td>
                     <td class="expense">-R$ 140,00</td>
                     <td class="data">26/01/2021</td>
+                    <td><img src="./assets/minus.svg" alt="Remover transação"></td>
                 </tr>
             </tbody>
         </table>
@@ -62,6 +75,24 @@
     <footer>
         <p>Finance Control $$$</p>
     </footer>
+
+    <div class="modal-overlay active">
+        <div class="modal">
+            <div class="modal-content">
+                <h3>Nova Transação</h3>
+                <form action="">
+                    <input type="text" name="description" id="description" placeholder="Descrição">
+                    <input type="number" name="value" id="value" placeholder="0,00">
+                    <span>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</span>
+                    <input type="date" name="date" id="date">
+                    <div class="button-actions">
+                        <button id="cancel">Cancelar</button>
+                        <button id="save">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
