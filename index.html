@@ -20,27 +20,27 @@
                 <p>Entradas</p>
                 <img src="./assets/income.svg" alt="Entradas">
             </div>
-            <h4>R$ 5.000,00</h4>
+            <h4 id="inputDisplay">R$ 5.000,00</h4>
         </div>
         <div class="output">
             <div class="output-top">
                 <p>Saídas</p>
                 <img src="./assets/expense.svg" alt="Saídas">
             </div>
-            <h4>R$ 2.000,00</h4>
+            <h4 id="outputDisplay">R$ 2.000,00</h4>
         </div>
         <div class="total">
             <div class="total-top">
                 <p>Total</p>
                 <img src="./assets/total.svg" alt="Total">
             </div>
-            <h4>R$ 3.000,00</h4>
+            <h4 id="totalDisplay">R$ 3.000,00</h4>
         </div>
     </section>
 
     <section class="transactions">
         <a class="new-transaction" href="#">+ Nova Transação</a>
-        <table>
+        <table id="data-table">
             <thead>
                 <tr>
                     <th>Descrição</th>
@@ -49,26 +49,7 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td class="description">Energia</td>
-                    <td class="expense">-R$ 215,00</td>
-                    <td class="data">20/01/2021</td>
-                    <td><img src="./assets/minus.svg" alt="Remover transação"></td>
-                </tr>
-                <tr>
-                    <td class="description">Criação de Websites</td>
-                    <td class="income">R$ 5.000,00</td>
-                    <td class="data">15/01/2021</td>
-                    <td><img src="./assets/minus.svg" alt="Remover transação"></td>
-                </tr>
-                <tr>
-                    <td class="description">Internet</td>
-                    <td class="expense">-R$ 140,00</td>
-                    <td class="data">26/01/2021</td>
-                    <td><img src="./assets/minus.svg" alt="Remover transação"></td>
-                </tr>
-            </tbody>
+            <tbody></tbody>
         </table>
     </section>
 
@@ -80,7 +61,7 @@
         <div class="modal">
             <div class="modal-content">
                 <h3>Nova Transação</h3>
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
                     <input type="text" name="description" id="description" placeholder="Descrição">
                     <input type="number" name="value" id="value" placeholder="0,00" step="0.01">
                     <span>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</span>
