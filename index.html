@@ -20,26 +20,26 @@
                 <p>Entradas</p>
                 <img src="./assets/income.svg" alt="Entradas">
             </div>
-            <h4 id="inputDisplay">R$ 5.000,00</h4>
+            <h4 id="inputDisplay">R$ 0,00</h4>
         </div>
         <div class="output">
             <div class="output-top">
                 <p>Saídas</p>
                 <img src="./assets/expense.svg" alt="Saídas">
             </div>
-            <h4 id="outputDisplay">R$ 2.000,00</h4>
+            <h4 id="outputDisplay">R$ 0,00</h4>
         </div>
         <div class="total">
             <div class="total-top">
                 <p>Total</p>
                 <img src="./assets/total.svg" alt="Total">
             </div>
-            <h4 id="totalDisplay">R$ 3.000,00</h4>
+            <h4 id="totalDisplay">R$ 0,00</h4>
         </div>
     </section>
 
     <section class="transactions">
-        <a class="new-transaction" href="#">+ Nova Transação</a>
+        <a onclick="Modal.openModal()" class="new-transaction" href="#">+ Nova Transação</a>
         <table id="data-table">
             <thead>
                 <tr>
@@ -64,7 +64,7 @@
                 <form action="" onsubmit="Form.submit(event)">
                     <input type="text" name="description" id="description" placeholder="Descrição">
                     <input type="number" name="value" id="value" placeholder="0,00" step="0.01">
-                    <span>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</span>
+                    <span>Use o sinal - (negativo) para despesas</span>
                     <input type="date" name="date" id="date">
                     <div class="button-actions">
                         <a href="#" id="cancel">Cancelar</a>
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/script.js"></script>
 
 </body>
 
